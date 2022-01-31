@@ -1,0 +1,528 @@
+/* Features Section
+--------------------------------*/
+#features {
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+  }
+  
+  #features .feature-block {
+    background: #fff none repeat scroll 0 0;
+    padding: 30px 20px;
+    margin-bottom: 30px;
+    transition: all 0.5s ease-in-out 0s;
+  }
+  
+  #features .feature-block:hover {
+    box-shadow: 0 0 35px rgba(0, 0, 0, 0.1);
+    transition: all 0.5s ease-in-out 0s;
+  }
+  
+  #features .feature-block h4 {
+    margin-bottom: 20px;
+  }
+  
+  #features .feature-block p {
+    margin-bottom: 0;
+  }
+
+  .line-1{
+    position: relative;
+    top: 50%;  
+    width: 6em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255,255,255,.75);
+    font-size: 180%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    
+}
+
+/* ANIMACIJA 1 */
+.anim-typewriter{
+  animation: typewriter 3s steps(70) 1s 1 normal both,
+             blinkTextCursor 500ms steps(70) infinite normal;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 16em;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(0, 0, 0, 0.75);}
+  to{border-right-color: transparent;}
+}
+/*scrool bar*/
+.progresss
+{ position: fixed;
+  z-index: 999;
+   bottom: 0; 
+   left: 0; 
+   height: 10px;
+   background-color: #FF9800;
+   transition: all linear 0.1s;
+   min-width: 1%; 
+}
+/* ANIMACIJA 2 */
+.anim-typewriter2{
+  animation: typewriter2 3s steps(50) 1s 1 normal both,
+             blinkTextCursor2 500ms steps(50) infinite normal;
+}
+@keyframes typewriter2{
+  from{width: 0;}
+  to{width:80%;}
+}
+@keyframes blinkTextCursor2{
+  from{border-right-color: rgba(0, 0, 0, 0.75);}
+  to{border-right-color: transparent;}
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+/* NAVBAR */
+.navbar-fixed-topp.scrolled{
+  background-color: #fff !important;
+  transition: background-color 200ms linear;
+}
+.navbar-fixed-topp{
+  background-color:#563d7c;
+  transition: background-color 200ms linear;
+}
+.letters{
+  color:white;
+  transition: color 200ms linear;
+  font-family: 'Roboto Condensed', sans-serif;
+  letter-spacing: 3px;
+  
+}
+
+.footerletters{
+
+    color:white;
+    transition: color 200ms linear;
+    font-family: 'Roboto Condensed', sans-serif;
+    letter-spacing: 3px;
+    
+  
+}
+
+.letters2{
+  color:#563d7c;
+  
+  font-family: 'Roboto Condensed', sans-serif;
+  letter-spacing: 3px;
+  
+}
+.letters2:hover{
+  color:yellow;
+  background-color:#563d7c;
+  transition: all 200ms linear;
+}
+
+.letters.scrolled{
+  color:#563d7c;
+  transition: color 200ms linear;
+}
+.dropdown:hover .dropdown-menu{
+  display: block;
+}
+.content {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.borders li a:hover{
+
+  border-left: 1px solid white;
+  color: yellow;
+  transition: color 500ms ease-in-out;
+
+}
+
+.navbrand{
+  color:white;
+  transition: color 200ms linear;
+  font-family: 'Roboto Condensed', sans-serif;
+  letter-spacing: 3px;
+}
+.navbrand:hover{
+  color: yellow;
+  transition: color 500ms ease-in-out;
+  text-decoration: none;
+}
+#button {
+  display: inline-block;
+  background-color: #FF9800;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color .3s, 
+    opacity .5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+#button::after {
+  content: "\f077";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #fff;
+}
+#button:hover {
+  cursor: pointer;
+  background-color: #563d7c;
+  color: yellow;
+  text-decoration: none;
+}
+#button:active {
+  background-color: #563d7c;
+}
+#button.show {
+  opacity: 1;
+  visibility: visible;
+}
+/*STRANICA POCETNI KORACI*/
+/*HIGHLITE ELEMENT*/
+.text{
+  font-size: 1.2rem;
+}
+.nt{
+  color:#563d7c
+}
+.na{
+  color:dodgerblue;
+}
+.s{
+  color:red;
+}
+
+.dugme{
+  color:#fff;
+  background-color: #563d7c86;
+}
+.dugme:hover{
+  color:rgba(247, 247, 54, 0.89);
+}
+/* Desktop Navigation */
+.nav-menu {
+  padding-top: 30px;
+}
+
+.nav-menu * {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav-menu > ul > li {
+  position: relative;
+  white-space: nowrap;
+}
+
+.nav-menu a {
+  display: flex;
+  align-items: center;
+  color: #a45dd6;
+  padding: 12px 15px;
+  margin-bottom: 8px;
+  transition: 0.3s;
+  font-size: 20px;
+}
+
+.nav-menu a i {
+  font-size: 24px;
+  padding-right: 8px;
+  color: #a45dd6;
+}
+
+.nav-menu a:hover, .nav-menu .active > a, .nav-menu li:hover > a {
+  text-decoration: none;
+  color: #563d7c;
+}
+
+.nav-menu a:hover i, .nav-menu .active > a i, .nav-menu li:hover > a i {
+  color: #563d7c;
+}
+
+.containerf {
+  margin: 0 auto;
+  width: 250px;
+  height: 200px;
+  position: relative;
+  perspective: 1000px;
+}
+
+.carousel {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: transform 1s;
+}
+.carousel div {
+  transform-style: preserve-3d;
+  
+}
+
+.item {
+  display: block;
+  position: absolute;
+  background: #000;
+  width: 250px;
+  height: 200px;
+  line-height: 200px;
+  font-size: 2em;
+  text-align: center;
+  color: #FFF;
+  opacity: 0.95;
+  border-radius: 10px;
+  transition: transform 1s;
+}
+
+.a {
+  transform: rotateY(0deg) translateZ(250px);
+}
+.a .item {
+  background: #ed1c24;
+}
+.b {
+  transform: rotateY(60deg) translateZ(250px) rotateY(-60deg);
+}
+.b .item {
+  background: #0072bc;
+}
+.c {
+  transform: rotateY(120deg) translateZ(250px)  rotateY(-120deg);
+}
+.c .item {
+  background: #39b54a;
+}
+.d {
+  transform: rotateY(180deg) translateZ(250px) rotateY(-180deg);
+}
+.d .item {
+  background: #f26522;
+}
+.e {
+  transform: rotateY(240deg) translateZ(250px) rotateY(-240deg);
+} 
+.e .item {
+  background: #630460;
+}
+.f {
+  transform: rotateY(300deg) translateZ(250px) rotateY(-300deg);
+}
+.f .item {
+  background: #8c6239;
+}
+
+.next, .prev {
+  color: #444;
+  padding: 1em 2em;
+  cursor: pointer;
+  background: #CCC;
+  border-radius: 5px;
+  border-top: 1px solid #FFF;
+  box-shadow: 0 5px 0 #999;
+  transition: box-shadow 0.1s, top 0.1s;
+}
+.next:hover, .prev:hover { color: #000; }
+.next:active, .prev:active {
+  box-shadow: 0 1px 0 #999;
+}
+.next { right: 5em; }
+.prev { left: 5em; }
+/*FONT-NAVBAR*/
+.navm ul li a{
+  font-family: 'Nunito', sans-serif;
+}
+/*ISTORIJA.HTML*/
+.pasusI{
+  font-family: 'Nunito', sans-serif;
+  font-size: 1.2rem;
+}
+.btn1{
+  background-color: rgb(91, 9, 168);
+  color:white;
+  font-family: 'Nunito', sans-serif ;
+  float: right;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+.btn1:hover{
+  color: rgb(255, 255, 255);
+  background-color: #FF9800;
+}
+.card-titleI{
+  text-shadow: 1px 1px black;
+}
+.h1_istorija{
+  margin: 60px 0 10px;
+    font-size: 60px;
+    font-weight: 200;
+    line-height: 1;
+    letter-spacing: -1px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+    color: rgb(91, 9, 168);
+    text-shadow: 1px 1px black;
+}
+/*rating stars*/
+.checked {
+  color: orange;
+}
+/*O NAMA STRANICA*/
+.h1_o_nnama{
+  /*text-decoration-line: underline;
+  text-decoration-style: wavy;*/
+  opacity: 0.6;
+    font-size: 80px;
+    line-height: 1;
+    letter-spacing: -1px;
+    font-family:OFL Sorts Mill Goudy, Noto Nastaliq Urdu, My Noto Nastaliq Urdu, Georgia, serif;
+   /* @font-face {
+      font-family: Clip;
+      src: url("https://acupoftee.github.io/fonts/Clip.ttf");
+    }*/
+    font-weight: 400;
+    color: rgb(91, 9, 168);
+    text-shadow: 1px 1px black;
+    margin-bottom: 2%;
+}
+/*O NAMA STRANICA */
+/*----  Main Style  ----*/
+#cards_landscape_wrap-2{
+  text-align: center;
+  background: #F7F7F7;
+}
+#cards_landscape_wrap-2 .container{
+  padding-top: 80px; 
+  padding-bottom: 100px;
+}
+#cards_landscape_wrap-2 a{
+  text-decoration: none;
+  outline: none;
+}
+#cards_landscape_wrap-2 .card-flyer {
+  border-radius: 5px;
+}
+#cards_landscape_wrap-2 .card-flyer .image-box{
+  background: #ffffff;
+  overflow: hidden;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.50);
+  border-radius: 5px;
+}
+#cards_landscape_wrap-2 .card-flyer .image-box img{
+  -webkit-transition:all .9s ease; 
+  -moz-transition:all .9s ease; 
+  -o-transition:all .9s ease;
+  -ms-transition:all .9s ease; 
+  width: 100%;
+  height: 200px;
+}
+#cards_landscape_wrap-2 .card-flyer:hover .image-box img{
+  opacity: 0.7;
+  -webkit-transform:scale(1.15);
+  -moz-transform:scale(1.15);
+  -ms-transform:scale(1.15);
+  -o-transform:scale(1.15);
+  transform:scale(1.15);
+}
+#cards_landscape_wrap-2 .card-flyer .text-box{
+  text-align: center;
+}
+#cards_landscape_wrap-2 .card-flyer .text-box .text-container{
+  padding: 30px 18px;
+}
+#cards_landscape_wrap-2 .card-flyer{
+  background: #FFFFFF;
+  margin-top: 30px;
+  -webkit-transition: all 0s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -ms-transition: all 0s ease-in;
+  -o-transition: all 0s ease-in;
+  transition: all 0s ease-in;
+  box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.40);
+}
+#cards_landscape_wrap-2 .card-flyer:hover{
+  background: #fff;
+  box-shadow: 0px 15px 26px rgba(0, 0, 0, 0.50);
+  -webkit-transition: all 0s ease-in;
+  -moz-transition: all 0s ease-in;
+  -ms-transition: all 0s ease-in;
+  -o-transition: all 0s ease-in;
+  transition: all 0s ease-in;
+  margin-top: 50px;
+}
+#cards_landscape_wrap-2 .card-flyer .text-box p{
+  margin-top: 10px;
+  margin-bottom: 0px;
+  padding-bottom: 0px; 
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: #000000;
+}
+#cards_landscape_wrap-2 .card-flyer .text-box h6{
+  margin-top: 0px;
+  margin-bottom: 4px; 
+  font-size: 1.6rem;
+  font-weight: bold;
+  text-transform: cursive;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  letter-spacing: 1px;
+  color: rgb(91, 9, 168);
+  text-shadow: 1px 1px black;
+}
+/*element h1*/
+/*.h1_o_nnama{
+margin: 40px 0 20px;
+text-decoration-line: underline;
+  text-decoration-style: wavy;
+  opacity: 0.7;
+    font-size: 60px;
+    font-weight: 200;
+    line-height: 1;
+    letter-spacing: -1px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+    color: #803165;
+    text-shadow: 1px 1px black;
+}*/
+/*social*/
+.social{
+  font-size: 1.2rem;
+  letter-spacing: 0.9rem;
+  color:rgb(0, 0, 0);
+}
+/*jumb about us*/
+@font-face {
+  font-family: Clip;
+  src: url("https://acupoftee.github.io/fonts/Clip.ttf");
+}
+
+/*KOMPONENTE*/
+.h2_komponente{
+  color:white;
+  font-family: 'Nunito', sans-serif;
+  font-size: 3.2rem;
+  padding-top: 4%;
+  padding-bottom: 2%;
+}
+.p_komponente{
+  color:#cdbfe3;
+  padding-bottom: 5%;
+  font-size: 1.5rem;
+}
+.h2_komponente_a{
+  color:rgb(76, 3, 90);
+  font-family: 'Nunito', sans-serif;
+  font-size: 3rem;
+  padding-top: 4%;
+  padding-bottom: 2%;
+}

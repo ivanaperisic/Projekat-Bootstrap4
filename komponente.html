@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sajt o komponentama Bootstrapa">
+    <meta name="keywords" content="Components, Alerts, Buttons,Dugmići, Jumbatron, Cards, Kartice, Navbar, Modals, Progress, Upozorenja, Karusel, Carousel, Navigacioni bar, Komponente">
+    <title>Komponente Bootstrap-a</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+</head>
+
+<body style="overflow-x: hidden;">
+       <!--SCROOL BAR--->
+       <div class="progresss"></div>
+       <!--KRAJ SCROOL BARA-->
+    <!---POCETAK NAVIGACIONOG MENIJA--->
+    <nav class="navbar navbar-expand-md sticky-top navbar-fixed-topp" id="topscroll">
+        <!-- justify-content-center - centriranje-->
+        <div class="container">
+            <a type="button" class="navbrand"><img id="logo" src="slide/slika11.png" class="img-fluid" alt=""
+                    style="margin-right: 19px;">BOOTSTRAP 4</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#responsivmeni">
+                <span class="navbar-toggler-icon"> <i class="fa fa-navicon letters" style="font-size:28px;"></i></span>
+            </button>
+            <div class="collapse navbar-collapse" id="responsivmeni">
+                <ul class="navbar-nav mx-auto mt-md-0 mt- borders">
+                    <li class="nav-item mr-4 ">
+                        <a class="nav-link letters" href="index.html">POČETNA</a>
+                    </li>
+                    <li class="nav-item dropdown mr-4">
+                        <a class="nav-link letters dropdown-toggle" href="pocetni_koraci.html" id="navbarDropdown"
+                            role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            NAUČI BOOTSTRAP
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item letters2" href="pocetni_koraci.html">Početni koraci</a>
+                            <a class="dropdown-item letters2" href="komponente.html">Komponente</a>
+                    </li>
+                    <li class="nav-item mr-4">
+                        <a class="nav-link letters" href="istorija.html">ISTORIJA</a>
+                    </li>
+                    <li class="nav-item mr-4">
+                        <a class="nav-link letters" href="galerija.html">GALERIJA</a>
+                    </li>
+                    <li class="nav-item mr-4">
+                        <a class="nav-link letters" href="o_nama.html">O NAMA</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <a id="button"></a>
+    <div class="row">
+    <!---KRAJ NAVIGACIONOG MENIJA--->
+    <!--POCETAK COMPONENTS ELEMENTA-->
+    <div class="komponente mt-0" style="background-color: #563d7c; width: 100%;">
+        <div class="container">
+        <h2 class="h2_komponente">
+            Komponente
+        </h2>
+        <p class="p_komponente">
+            Bootstrap 4 nudi desetak komponenata napravljenih da omoguće navigaciju na stranici, unos podataka, ikonografiju. Pored navedenih postoje
+            i komponente pomoću kojih se realizuju upozorenja, padajuće liste, dugmad, forme, progres barovi i druge. 
+        </p>
+    </div>
+    </div>
+    </div>
+    <!--KRAJ COMPONENTS ELEMENTA-->
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="h2_komponente_a">
+                    Alerts-Upozorenja
+                </h2>
+                <div class="accordion" id="accordionExample">
+                    <div class="card">
+                      <div class="card-header" id="headingOne">
+                        <h2 class="mb-0 h2_komponente_a">
+                            <p style="text-decoration: none; font-family: 'Nunito', sans-serif; font-size: 1.5rem;">
+                                Pružaju mogućnost korisnicima da prikažu povratne informacije nakon izvršene radnje uz veliki broj dostupnih i fleksibilnih poruka.
+                                Upozorenja su dostupna za bilo koju dužinu teksta. Širok spektar boja omogućava korisniku da vizuelno predstavi svrhu poruke napisane unutar komponente alert. 
+                            </p>
+                            <img src="slide/alerts.png" class="img-fluid" alt="">
+                          <button class="btn btn-link btn-block text-center mx-auto d-block w-50" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"
+                          style="text-decoration: none; font-family: 'Nunito', sans-serif; background-color: #563d7c; color: rgb(247, 247, 247);
+                          width: 19%; font-size: 1.3rem; text-align: center;">
+                            Pogledajte kod
+                          </button>
+                        </h2>
+                      </div>
+            </div>
+                </div>
+                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                    <div class="card-body">
+                        <figure class="highlight" style="font-size: 1.3rem;"><pre><code class="language-html" data-lang="html">
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert alert-primary"</span> <span class="na">role=</span><span class="s">"alert"</span><span class="nt">&gt;</span>A simple primary alert—check it out!<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert alert-secondary"</span> <span class="na">role=</span><span class="s">"alert"</span><span class="nt">&gt;</span>A simple primary alert—check it out!<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert alert-success"</span> <span class="na">role=</span><span class="s">"alert"</span><span class="nt">&gt;</span>A simple primary alert—check it out!<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert alert-danger"</span> <span class="na">role=</span><span class="s">"alert"</span><span class="nt">&gt;</span>A simple primary alert—check it out!<span class="nt">&lt;/div&gt;</span></code></pre>
+                        </figure>
+                    </div>
+                  </div>
+                </div>
+        </div>
+    </div>
+    <!--KRAJ ALERTS ELEMENTA-->
+    <!--POCETAK BUTTON ELEMENTA-->
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="h2_komponente_a">
+                    Buttons-Dugmići
+                </h2>
+                <div class="accordion" id="accordionExample2">
+                    <div class="card">
+                      <div class="card-header" id="headingOne">
+                        <h2 class="mb-0 h2_komponente_a">
+                            <p style="text-decoration: none; font-family: 'Nunito', sans-serif; font-size: 1.5rem;">
+                                Koristite Bootstrap prilagođene dugmiće za radnje sa obrazcima, dijalozima, formama, uz podršku različitih stilova i veličina. 
+                                Bootstrap uključuje nekoliko predefinisanih stilova dugmadi, od kojih svaki služi svojoj semantičkoj svrsi, uz neke dodatke
+                                koji služe da se postigne veća kontrola.  
+                            </p>
+                            <img src="slide/buttons.PNG" class="img-fluid" alt="">
+                          <button class="btn btn-link btn-block text-center mx-auto d-block w-50" type="button" data-toggle="collapse" data-target="#collapseOne1" aria-expanded="true" aria-controls="collapseOne"
+                          style="text-decoration: none; font-family: 'Nunito', sans-serif; background-color: #563d7c; color: rgb(247, 247, 247);
+                          width: 19%; font-size: 1.3rem; text-align: center; margin-top: 2%;">
+                            Pogledajte kod
+                          </button>
+                        </h2>
+                      </div>
+            </div>
+                </div>
+                <div id="collapseOne1" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample2">
+                    <div class="card-body">
+                        <figure class="highlight"  style="font-size: 1.3rem;"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">id=</span><span class="s">"myButton"</span><span class="na">class=</span><span class="s">"btn btn-primary"</span><span class="nt">&gt;</span>Primary<span class="nt">&lt;/button&gt;</span> </code></pre></figure>
+                        <figure class="highlight"  style="font-size: 1.3rem;"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">id=</span><span class="s">"myButton"</span><span class="na">class=</span><span class="s">"btn btn-secondary"</span><span class="nt">&gt;</span>Secondary<span class="nt">&lt;/button&gt;</span></code></pre></figure>
+                        <figure class="highlight"  style="font-size: 1.3rem;"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">id=</span><span class="s">"myButton"</span><span class="na">class=</span><span class="s">"btn btn-success"</span><span class="nt">&gt;</span>Success<span class="nt">&lt;/button&gt;</span></code></pre></figure>
+                        <figure class="highlight"  style="font-size: 1.3rem;"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">id=</span><span class="s">"myButton"</span><span class="na">class=</span><span class="s">"btn btn-danger"</span><span class="nt">&gt;</span>Danger<span class="nt">&lt;/button&gt;</span></code></pre></figure>
+                    </div>
+                </div>
+              </div>
+      </div>
+  </div>
+    <!--KRAJ BUTTON ELEMENTA-->
+    <!------POCETAK CARDS ELEMENTA------>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="h2_komponente_a">
+                    Cards-Kartice
+                </h2>
+                <div class="accordion" id="accordionExample3">
+                    <div class="card">
+                      <div class="card-header" id="headingOne">
+                        <h2 class="mb-0 h2_komponente_a">
+                            <p style="text-decoration: none; font-family: 'Nunito', sans-serif; font-size: 1.5rem;">
+                                Kartica je fleksibilni i proširivi kontejner sadržaja.
+                             Uključuje opcije za zaglavlja i podnožja, širok spektar sadržaja, kontekstualne boje pozadine i moćne opcije prikaza.  
+                             Kartice su napravljene sa što manje oznaka i stilova, ali i dalje uspevaju da pruže mnoštvo kontrola i prilagođavanja. 
+                             Nude lako poravnanje i dobro se kombinuju sa ostalim komponentama Bootstrapa. 
+                            </p>
+                            <img src="slide/card.PNG" alt="" class="img-fluid">
+                          <button class="btn btn-link btn-block text-center mx-auto d-block w-50" type="button" data-toggle="collapse" data-target="#collapseOne3" aria-expanded="true" aria-controls="collapseOne"
+                          style="text-decoration: none; font-family: 'Nunito', sans-serif; background-color: #563d7c; color: rgb(247, 247, 247);
+                          width: 19%; font-size: 1.3rem; text-align: center; margin-top: 2%;">
+                            Pogledajte kod
+                          </button>
+                        </h2>
+                      </div>
+            </div>
+                </div>
+                <div id="collapseOne3" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample3">
+                    <div class="card-body" style="font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;">
+                        <div class="highlight" style="font-size: 1.3rem;"><pre class="chroma"><code class="language-html" data-lang="html">
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"card"</span> <span class="na">style</span><span class="o">=</span><span class="s">"width: 18rem;"</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">"..."</span> <span class="na">class</span><span class="o">=</span><span class="s">"card-img-top"</span> <span class="na">alt</span><span class="o">=</span><span class="s">"..."</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"card-body"</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">h5</span> <span class="na">class</span><span class="o">=</span><span class="s">"card-title"</span><span class="p">&gt;</span>Card title<span class="p">&lt;/</span><span class="nt">h5</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">"card-text"</span><span class="p">&gt;</span>Some quick example text to build on the card title and make up the bulk of the card's content.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">"#"</span> <span class="na">class</span><span class="o">=</span><span class="s">"btn btn-primary"</span><span class="p">&gt;</span>Go somewhere<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span></code></pre></div>
+                    </div>
+                </div>
+              </div>
+      </div>
+  </div>
+<!--KRAJ CARSD ELEMENTA-->
+<!--POCETAK CAROUSEL ELEMENTA-->
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <h2 class="h2_komponente_a">
+                Carousel-karusel
+            </h2>
+            <div class="accordion" id="accordionExample4">
+                <div class="card">
+                  <div class="card-header" id="headingOne">
+                    <h2 class="mb-0 h2_komponente_a">
+                        <p style="text-decoration: none; font-family: 'Nunito', sans-serif; font-size: 1.5rem;">
+                        Karusel je komponenta koja omogućava sljad šou, kretanje kroz elemente-slike, odnosno slajdove. Radi sa nizom slika, teksta ili prilagođenih oznaka.
+                        Komponenta je izgrađena od CSS 3D transformacija i JavaScript-a. Da bi carousel bio vidljiv treba dodati klasu .activate. Ako na sajtu koristite vise 
+                        karusel elemenata obavezno dodajte ID elementa. 
+                        </p>
+                        <img src="slide/karuusel.PNG" class="img-fluid" alt="" class="text-center">
+                      <button class="btn btn-link btn-block text-left mx-auto d-block w-50 text-center" type="button" data-toggle="collapse" data-target="#collapseOne4" aria-expanded="true" aria-controls="collapseOne"
+                      style="text-decoration: none; font-family: 'Nunito', sans-serif; background-color: #563d7c; color: rgb(247, 247, 247);
+                      width: 19%; font-size: 1.3rem; text-align: center; margin-top: 2%;">
+                        Pogledajte kod
+                      </button>
+                    </h2>
+                  </div>
+        </div>
+            </div>
+            <div id="collapseOne4" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample4">
+                <div class="card-body" style="font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;">
+                    <div class="highlight" style="font-size: 1.3rem;"><pre class="chroma"><code class="language-html" data-lang="html">
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">"carouselExampleControls"</span> <span class="na">class</span><span class="o">=</span><span class="s">"carousel slide"</span> <span class="na">data-ride</span><span class="o">=</span><span class="s">"carousel"</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"carousel-inner"</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"carousel-item active"</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">"..."</span> <span class="na">class</span><span class="o">=</span><span class="s">"d-block w-100"</span> <span class="na">alt</span><span class="o">=</span><span class="s">"..."</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"carousel-item"</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">"..."</span> <span class="na">class</span><span class="o">=</span><span class="s">"d-block w-100"</span> <span class="na">alt</span><span class="o">=</span><span class="s">"..."</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"carousel-item"</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">"..."</span> <span class="na">class</span><span class="o">=</span><span class="s">"d-block w-100"</span> <span class="na">alt</span><span class="o">=</span><span class="s">"..."</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">a</span> <span class="na">class</span><span class="o">=</span><span class="s">"carousel-control-prev"</span> <span class="na">href</span><span class="o">=</span><span class="s">"#carouselExampleControls"</span> <span class="na">role</span><span class="o">=</span><span class="s">"button"</span> <span class="na">data-slide</span><span class="o">=</span><span class="s">"prev"</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">"carousel-control-prev-icon"</span> <span class="na">aria-hidden</span><span class="o">=</span><span class="s">"true"</span><span class="p">&gt;&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">"sr-only"</span><span class="p">&gt;</span>Previous<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">a</span> <span class="na">class</span><span class="o">=</span><span class="s">"carousel-control-next"</span> <span class="na">href</span><span class="o">=</span><span class="s">"#carouselExampleControls"</span> <span class="na">role</span><span class="o">=</span><span class="s">"button"</span> <span class="na">data-slide</span><span class="o">=</span><span class="s">"next"</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">"carousel-control-next-icon"</span> <span class="na">aria-hidden</span><span class="o">=</span><span class="s">"true"</span><span class="p">&gt;&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">"sr-only"</span><span class="p">&gt;</span>Next<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span></code></pre></div>
+                </div>
+            </div>
+          </div>
+  </div>
+</div>
+<!--KRAJ CAROUSEL ELEMENTA-->
+<!--POCETAK JUMBOTRON ELEMENTA-->
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <h2 class="h2_komponente_a">
+                Jumbotron-džambatron
+            </h2>
+            <div class="accordion" id="accordionExample5">
+                <div class="card">
+                  <div class="card-header" id="headingOne">
+                    <h2 class="mb-0 h2_komponente_a">
+                        <p style="text-decoration: none; font-family: 'Nunito', sans-serif; font-size: 1.5rem;">
+                        Fleksibilna komponenta za prikazivanje sadržaja. Ona može opciono proširiti čitav prikaz kako bi pokazala ključne poruke na stranici. 
+                        Da biste napravili jumbotron pune širine i bez zaobljenih uglova, dodajte klasu modifikatora .jumbotron-fluid i dodajte .container ili .container-fluid unutra. 
+                        </p>
+                        <img src="slide/jumbotron.PNG" alt="" class="img-fluid">
+                      <button class="btn btn-link btn-block text-center mx-auto d-block w-50" type="button" data-toggle="collapse" data-target="#collapseOne5" aria-expanded="true" aria-controls="collapseOne"
+                      style="text-decoration: none; font-family: 'Nunito', sans-serif; background-color: #563d7c; color: rgb(247, 247, 247);
+                      width: 19%; font-size: 1.3rem; text-align: center; margin-top: 2%;">
+                        Pogledajte kod
+                      </button>
+                    </h2>
+                  </div>
+        </div>
+            </div>
+            <div id="collapseOne5" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample5">
+                <div class="card-body" style="font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;">
+                    <div class="highlight" style="font-size: 1.3rem;"><pre class="chroma"><code class="language-html" data-lang="html">
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"jumbotron"</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">h1</span> <span class="na">class</span><span class="o">=</span><span class="s">"display-4"</span><span class="p">&gt;</span>Hello, world!<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">"lead"</span><span class="p">&gt;</span>This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">hr</span> <span class="na">class</span><span class="o">=</span><span class="s">"my-4"</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>It uses utility classes for typography and spacing to space content out within the larger container.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">a</span> <span class="na">class</span><span class="o">=</span><span class="s">"btn btn-primary btn-lg"</span> <span class="na">href</span><span class="o">=</span><span class="s">"#"</span> <span class="na">role</span><span class="o">=</span><span class="s">"button"</span><span class="p">&gt;</span>Learn more<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span></code></pre></div>                
+                </div>
+            </div>
+          </div>
+  </div>
+</div>
+<!--KRAJ JUMBOTRON ELEMENTA-->
+<!--POCETAK NAVBAR ELEMENTA-->
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <h2 class="h2_komponente_a">
+                Navbar-navigacioni bar
+            </h2>
+            <div class="accordion" id="accordionExample6">
+                <div class="card">
+                  <div class="card-header" id="headingOne">
+                    <h2 class="mb-0 h2_komponente_a">
+                        <p style="text-decoration: none; font-family: 'Nunito', sans-serif; font-size: 1.5rem;">
+                            Dokumentacija i primeri za snažno, navigaciono zaglavlje navigacionog sistema Bootstrap, koje je prilagodljivo.
+                            Uključuje podršku za brendiranje, navigaciju i još mnogo toga.
+                            Nvaigacioni barovi su u osnovi prilagodljivi, ali se oni mogu modifikovati, prilagodljivost zavisi od  Collapse JavaScript dodatka.
+                        </p>
+                        <img src="slide/navbar.PNG" alt="" class="img-fluid">
+                      <button class="btn btn-link btn-block text-center mx-auto d-block w-50" type="button" data-toggle="collapse" data-target="#collapseOne6" aria-expanded="true" aria-controls="collapseOne"
+                      style="text-decoration: none; font-family: 'Nunito', sans-serif; background-color: #563d7c; color: rgb(247, 247, 247);
+                      width: 19%; font-size: 1.3rem; text-align: center; margin-top: 2%;">
+                        Pogledajte kod
+                      </button>
+                    </h2>
+                  </div>
+        </div>
+            </div>
+            <div id="collapseOne6" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample6">
+                <div class="card-body" style="font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;">
+                    <div class="highlight" style="font-size: 1.3rem;"><pre class="chroma"><code class="language-html" data-lang="html">
+<span class="p">&lt;</span><span class="nt">nav</span> <span class="na">class</span><span class="o">=</span><span class="s">"navbar navbar-expand-lg navbar-light bg-light"</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">a</span> <span class="na">class</span><span class="o">=</span><span class="s">"navbar-brand"</span> <span class="na">href</span><span class="o">=</span><span class="s">"#"</span><span class="p">&gt;</span>Navbar<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">button</span> <span class="na">class</span><span class="o">=</span><span class="s">"navbar-toggler"</span> <span class="na">type</span><span class="o">=</span><span class="s">"button"</span> <span class="na">data-toggle</span><span class="o">=</span><span class="s">"collapse"</span> <span class="na">data-target</span><span class="o">=</span><span class="s">"#navbarNav"</span> <span class="na">aria-controls</span><span class="o">=</span><span class="s">"navbarNav"</span> <span class="na">aria-expanded</span><span class="o">=</span><span class="s">"false"</span> <span class="na">aria-label</span><span class="o">=</span><span class="s">"Toggle navigation"</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">"navbar-toggler-icon"</span><span class="p">&gt;&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"collapse navbar-collapse"</span> <span class="na">id</span><span class="o">=</span><span class="s">"navbarNav"</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">ul</span> <span class="na">class</span><span class="o">=</span><span class="s">"navbar-nav"</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">li</span> <span class="na">class</span><span class="o">=</span><span class="s">"nav-item active"</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">a</span> <span class="na">class</span><span class="o">=</span><span class="s">"nav-link"</span> <span class="na">href</span><span class="o">=</span><span class="s">"#"</span><span class="p">&gt;</span>Home <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">"sr-only"</span><span class="p">&gt;</span>(current)<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">li</span> <span class="na">class</span><span class="o">=</span><span class="s">"nav-item"</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">a</span> <span class="na">class</span><span class="o">=</span><span class="s">"nav-link"</span> <span class="na">href</span><span class="o">=</span><span class="s">"#"</span><span class="p">&gt;</span>Features<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">li</span> <span class="na">class</span><span class="o">=</span><span class="s">"nav-item"</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">a</span> <span class="na">class</span><span class="o">=</span><span class="s">"nav-link"</span> <span class="na">href</span><span class="o">=</span><span class="s">"#"</span><span class="p">&gt;</span>Pricing<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">li</span> <span class="na">class</span><span class="o">=</span><span class="s">"nav-item"</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">a</span> <span class="na">class</span><span class="o">=</span><span class="s">"nav-link disabled"</span> <span class="na">href</span><span class="o">=</span><span class="s">"#"</span> <span class="na">tabindex</span><span class="o">=</span><span class="s">"-1"</span> <span class="na">aria-disabled</span><span class="o">=</span><span class="s">"true"</span><span class="p">&gt;</span>Disabled<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">nav</span><span class="p">&gt;</span></code></pre></div>
+                </div>
+            </div>
+          </div>
+  </div>
+</div>
+<!--KRAJ NAVBAR ELEMENTA-->
+ <!----------------------POCETAK FOOTERA----------------->
+ <footer class="mt-5">
+    <div class="col-12 text-center footerletters py-5" style="background-color: #563d7c;">Copyright &copy; 2021, napravljeno od <i class="fa fa-heart" aria-hidden="true"></i>
+    kao doprinos FTN-a, boljem web programiranju
+    </div>
+  </footer>
+  <!----------------------KRAJ FOOTERA-------------------->
+</body>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous"></script>
+<script>
+    AOS.init();
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+    crossorigin="anonymous"></script>
+<script src="script.js"></script>
+
+</html>
